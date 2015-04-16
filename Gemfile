@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '~> 4.1.8'
+gem 'rails', '~> 3.2.11'
 gem 'rack-cors', :require => 'rack/cors'
 
 gem 'bundler'
@@ -9,13 +9,14 @@ gem 'sprockets-rails'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 gem 'xlsx_writer'
-gem 'mysql2'
 gem 'devise', '3.2.3'
 gem 'devise-encryptable'
 gem 'slim-rails'
 gem 'doorkeeper', '~> 1.4.0'
 gem 'grape-doorkeeper', '~> 0.0.2'
 gem 'twitter-bootstrap-rails', '~> 2.1.9'
+gem 'pg'
+gem 'activerecord-postgis-adapter'
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -41,7 +42,7 @@ gem 'grape', '~> 0.9.0'
 gem 'hashie_rails'
 gem 'grape-rabl', '~> 0.3.0'
 group :development do
-  gem 'better_errors'
+  #gem 'better_errors'
   gem "binding_of_caller", ">= 0.6.9"
   gem 'pry'
   gem 'rspec-rails', '~> 3.1.0'
@@ -64,7 +65,7 @@ gem 'wkhtmltopdf-binary', '~> 0.9.9.3'
 # testing
 gem 'factory_girl_rails', '~> 4.5.0'
 gem 'factory_girl', '~> 4.5.0'
-gem 'zapata', groups: %w(development test)
+#gem 'zapata', groups: %w(development test)
 gem 'faker', '~> 1.4.3'
 
 group :test do
